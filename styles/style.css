@@ -38,6 +38,9 @@ nav li a{
     font-size: 4rem;
     color: rgb(19, 19, 19);
 }
+.section-description{
+    color: rgb(114, 114, 114);
+}
 .banner img{
     margin-top: 50px;
     width: 100%;
@@ -46,13 +49,13 @@ nav li a{
     color: rgb(255, 255, 255);
     background: rgb(255, 144, 14);
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 180px;
     height: 64px;
     border: none;
 }
 
-main{
+main, footer{
     width: 1440px;
     margin: 0 auto;
     margin-top: 85px;
@@ -68,7 +71,7 @@ main{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-.teams-title{
+.section-title{
     font-size: 3rem;
 }
 .teams-content{
@@ -85,6 +88,88 @@ main{
     color: rgb(255, 144, 14);
 }
 
+.experience{
+    display: flex;
+    margin-top: 130px;
+}
+.experience-title{
+    font-size: 3rem;
+    width: 470px;
+    padding-left: 25px;
+}
+.experience-name-title{
+    color: rgb(19, 19, 19);
+    font-size: 1.2rem;
+}
+.experience-description{
+    color: rgb(114, 114, 114);
+}
+.experience-bg{
+    background: rgb(255, 144, 14);
+    width: 5px;
+    height: 115px;
+}
+.experience-content{
+    padding-right: 150px;
+}
+.experience-name{
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.facts-container{
+    margin-top: 130px;
+}
+.facts-card{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.facts-card-award{
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    text-align: center;
+    align-content: center;
+}
+.facts-card-state{
+    color: rgb(66, 66, 66);
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.facts-card-description{
+    font-size:1.2rem ;
+    color: rgb(114, 114, 114);
+    font-weight: 600;
+}
+footer{
+    text-align: center;
+    margin-top: 150px;
+    
+}
+.sponsors-img{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.sponsors-footer{
+    align-content: center;
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    width: 1440px;
+    height: 100px;
+    color: rgb(66, 66, 66);
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 10px;
+}
 @media screen and (max-width:576px) {
     header{
         padding: 10px;
@@ -92,7 +177,7 @@ main{
     nav{
         flex-direction: column;
     }
-    main{
+    main, footer{
         width: 100%;
     }
     .teams-container{
@@ -104,10 +189,84 @@ main{
     .teams-content{
         padding: 20px;
     }
+    .experience{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .experience-name{
+        
+        padding: 20px;
+    }
+    .experience-bg{
+        width: 5px;
+        height: 160px;
+    }
+    .experience-title{
+        width: 300px;
+        padding-left: 15px;
+        
+    }
+    .experience-img img{
+        width: 100%;
+    }
+    .experience-content{
+        padding: 0;
+    }
+    .facts-card{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 80px;
+        align-items: center;
+    }
+    .facts-container{
+        margin-top: 100px;
+        padding: 20px;
+    }
+    .sponsors-img{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sponsors-footer{
+        width: 100%;
+        padding: 10px;   
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
     header{
         padding: 30px;
+    }
+    main, footer{
+        width: 100%;
+    }
+    .teams-container{
+        flex-direction: column;
+    }
+    .teams-content{
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .experience{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .experience-img img{
+        width: 100%;
+    }
+    .facts-container{
+        margin-top: 100px;
+        padding: 20px;
+    }
+    .facts-card{
+        gap: 10px;
+        align-items: center;
+    }
+    .sponsors-img{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sponsors-footer{
+        width: 100%;
+        padding: 10px;  
     }
 }
