@@ -119,6 +119,24 @@ main, footer{
     margin-bottom: 20px;
     padding: 30px;
 }
+.ten-years-bedge{
+    color: white;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    right: 100px;
+}
+.ten-years-bedge h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.ten-years-bedge p{
+    font-size: 1.2rem;
+}
 
 .facts-container{
     margin-top: 130px;
@@ -193,8 +211,7 @@ footer{
         flex-direction: column;
         margin-top: 50px;
     }
-    .experience-name{
-        
+    .experience-name{   
         padding: 20px;
     }
     .experience-bg{
@@ -206,8 +223,12 @@ footer{
         padding-left: 15px;
         
     }
+    .experience-img{ 
+        margin-left: 120px;
+    }
     .experience-img img{
-        width: 100%;
+        width: 90%;
+        margin-left: 0;
     }
     .experience-content{
         padding: 0;
@@ -249,9 +270,17 @@ footer{
     .experience{
         flex-direction: column;
         margin-top: 50px;
+        padding: 20px;
+    }
+    .experience-name{
+        width: 100%;
+    }
+    .experience-img{ 
+        margin-left: 130px;
     }
     .experience-img img{
-        width: 100%;
+        width: 90%;
+        margin-left: 0;
     }
     .facts-container{
         margin-top: 100px;
